@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*chamber.com*/
+
+body {
+	font: 16px/28px arial, sans-serif;
+	background-color: lightblue;
+	color: gray;
+	background-image: url(img/doodles.png);
+}
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightblue;
+	border: 2px solid olive;
+	z-index: 999;
+}
+
+.container {
+	width: 960px;
+	margin: 80px auto;
+	background-color: white;
+	position: relative;
+}
+
+.twitter {
+	width: 172px;
+	height: 172px;
+	background-image: url(img/twitter1.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+
+}
+
+.header {
+	padding: 30px;
+	padding-bottom: 10px;
+}
+
+.header .judul {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 15PX;
+}
+
+.header a {
+	text-decoration: none;
+	color: olive;
+	padding: 5px;
+}
+
+.header a:hover {
+	background-color: lightblue;
+	color: white;
+}
+
+.hero {
+	height: 350px;
+	background-image: url(img/hero.png);
+	background-size: cover;
+	background-position: 0 -340px;
+	border-top: 5px solid olive;
+	border-bottom: 5px solid olive;
+}
+
+.main {
+	width: 600px;
+	padding: 30px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #666;
+}
+
+.main .penulis {
+	font-size: 12px;
+	margin-top: -2px;
+}
+
+.main .penulis a {
+	color: olive;
+	text-decoration: none;
+}
+
+.main p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: black;
+	text-align: justify;
+}
+
+/*sidebar*/
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+
+.sidebar img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
+	text-align: justify;
+}
+
+.footer {
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+}
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
